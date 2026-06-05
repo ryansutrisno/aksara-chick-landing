@@ -3,7 +3,7 @@
     "main",
     "master"
   ],
-  "repositoryUrl": "https://github.com/ryansutrisno/aksara-chick.git",
+  "repositoryUrl": "https://github.com/ryansutrisno/aksara-chick-landing.git",
   "tagFormat": "v${version}",
   "plugins": [
     [
