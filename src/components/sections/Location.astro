@@ -1,0 +1,234 @@
+---
+import { location, socials, hero } from '../../data/copy';
+import { buildWALink } from '../../utils/wa';
+
+const waLink = buildWALink(hero.ctaMessage);
+---
+
+<section id="lokasi" class="location-section">
+  <div class="container">
+    <div class="section-header reveal">
+    <div class="location-showcase reveal">
+      <div class="location-info">
+        <h3 class="heading-md" style="margin-bottom: 28px; color: var(--brand);">Outlet Aksara Chick</h3>
+        
+        <div class="location-item">
+          <div class="location-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <div class="location-text">
+            <p class="location-title">Alamat</p>
+            <p class="text-body">{location.address}</p>
+            <a href={location.mapsUrl} target="_blank" rel="noopener noreferrer" class="location-link">Buka di Google Maps →</a>
+          </div>
+        </div>
+
+        <div class="location-item">
+          <div class="location-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <div class="location-text">
+            <p class="location-title">Jam Operasional</p>
+            <p class="text-body">{location.hours}</p>
+          </div>
+        </div>
+
+        <div class="location-item">
+          <div class="location-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </div>
+          <div class="location-text">
+            <p class="location-title">Ikuti Kami</p>
+            <div class="social-inline">
+              <a href={socials.instagram} target="_blank" rel="noopener noreferrer" class="location-link">Instagram</a>
+              <span class="social-divider">·</span>
+              <a href={socials.tiktok} target="_blank" rel="noopener noreferrer" class="location-link">TikTok</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {location.mapsEmbed && (
+        <div class="location-map" set:html={location.mapsEmbed} />
+      )}
+    </div>
+
+    <!-- CTA Banner -->
+    <div class="cta-banner reveal" id="cta">
+      <h2 class="heading-lg cta-title">Lapar? Pesan Sekarang!</h2>
+      <p class="text-body cta-subtitle">Langsung hubungi kami via WhatsApp untuk pemesanan cepat.</p>
+      <a href={waLink} target="_blank" rel="noopener noreferrer" class="btn btn-primary cta-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Pesan via WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .location-section {
+    padding: 80px 0;
+    background: var(--bg-primary);
+  }
+
+  .location-showcase {
+    display: flex;
+    flex-direction: row;
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border);
+  }
+
+  .location-info {
+    flex: 1;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: left;
+    justify-content: center;
+  }
+
+  .location-map {
+    flex: 1.2;
+    display: flex;
+    background: var(--bg-secondary);
+    min-height: 400px;
+  }
+
+  .location-map :global(iframe) {
+    flex: 1;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: inherit;
+    border: none;
+    display: block;
+  }
+
+  .location-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .location-icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: var(--brand-subtle);
+    color: var(--brand);
+    border-radius: var(--radius-md);
+  }
+
+  .location-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 6px;
+  }
+
+  .location-title {
+    font-weight: 700;
+    color: var(--text-primary);
+    font-size: 1.05rem;
+  }
+
+  .location-link {
+    font-size: 0.875rem;
+    color: var(--brand);
+    font-weight: 600;
+    display: inline-block;
+    transition: opacity var(--transition-fast);
+  }
+
+  .location-link:hover {
+    opacity: 0.8;
+  }
+
+  .social-inline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .social-divider {
+    color: var(--text-muted);
+  }
+
+  /* CTA Banner */
+  .cta-banner {
+    margin-top: 64px;
+    padding: 56px 32px;
+    background: var(--brand);
+    border-radius: var(--radius-xl);
+    text-align: center;
+  }
+
+  .cta-title {
+    color: var(--text-inverse);
+    margin-bottom: 12px;
+  }
+
+  .cta-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 32px;
+    max-width: 100%;
+  }
+
+  .cta-btn {
+    background: var(--white);
+    color: var(--brand);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  }
+
+  .cta-btn:hover {
+    background: var(--bg-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 860px) {
+    .location-showcase {
+      flex-direction: column;
+    }
+    
+    .location-info {
+      padding: 32px;
+    }
+
+    .location-map {
+      min-height: 350px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .location-section {
+      padding: 56px 0;
+    }
+
+    .location-info {
+      padding: 24px;
+    }
+
+    .cta-banner {
+      margin-top: 48px;
+      padding: 40px 20px;
+    }
+  }
+</style>

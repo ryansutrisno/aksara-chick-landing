@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/layout/Navbar.astro';
+import Footer from '../components/layout/Footer.astro';
+import StickyWA from '../components/layout/StickyWA.astro';
+import Hero from '../components/sections/Hero.astro';
+import ProductCards from '../components/sections/ProductCards.astro';
+import Location from '../components/sections/Location.astro';
+import ScrollReveal from '../components/shared/ScrollReveal.astro';
+---
+
+<BaseLayout>
+  <ScrollReveal />
+  <Navbar />
+  <main>
+    <Hero />
+    <ProductCards />
+    <Location />
+  </main>
+  <Footer />
+  <StickyWA />
+</BaseLayout>

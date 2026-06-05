@@ -1,0 +1,38 @@
+{
+  "name": "aksara-chick",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Aksara Chick - Ayam Goreng Krispi Terbaik",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryansutrisno/aksara-chick.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryansutrisno/aksara-chick/issues"
+  },
+  "homepage": "https://github.com/ryansutrisno/aksara-chick#readme",
+  "dependencies": {
+    "astro": "^5.18.1"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.6",
+    "@semantic-release/release-notes-generator": "^14.1.0",
+    "conventional-changelog-conventionalcommits": "^9.3.1",
+    "semantic-release": "^24.2.7"
+  }
+}

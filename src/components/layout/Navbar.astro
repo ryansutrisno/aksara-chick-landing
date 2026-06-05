@@ -1,0 +1,90 @@
+---
+import { brand, nav } from '../../data/copy';
+import { buildWALink } from '../../utils/wa';
+
+const waLink = buildWALink(nav.waMessage);
+---
+
+<nav id="navbar" class="navbar">
+  <div class="nav-container">
+    <a href="/" class="nav-brand">
+      <img src="/logo.svg" alt={brand.name} class="nav-logo" width="36" height="36" />
+      <span class="nav-brand-text">{brand.name}</span>
+    </a>
+    <a href={waLink} target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm nav-cta">
+      {nav.ctaLabel}
+    </a>
+  </div>
+</nav>
+
+<style>
+  .navbar {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    z-index: 1000;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: var(--radius-full);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    transition: all var(--transition-base);
+  }
+
+  .navbar.scrolled {
+    background: rgba(240, 250, 245, 0.9); /* Soft brand green tint */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(10, 95, 56, 0.1);
+    box-shadow: 0 10px 30px rgba(10, 95, 56, 0.06);
+    transform: translateY(-4px); /* Slight pop up when floating */
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .nav-logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    object-fit: contain;
+  }
+
+  .nav-brand-text {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--text-primary);
+  }
+
+  .nav-cta {
+    white-space: nowrap;
+  }
+
+  @media (max-width: 480px) {
+    .navbar {
+      top: 12px;
+      left: 12px;
+      right: 12px;
+      padding: 10px 16px;
+    }
+    .nav-brand-text {
+      font-size: 1rem;
+    }
+  }
+</style>
