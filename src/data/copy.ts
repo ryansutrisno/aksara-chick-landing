@@ -7,7 +7,7 @@ export const brand = {
 export const meta = {
   title: 'Aksara Chick — Ayam Goreng Krispi Terbaik',
   description: 'Nikmati kelezatan ayam goreng krispi dengan bumbu rahasia khas Aksara Chick. Renyah di luar, juicy di dalam. Pesan sekarang via WhatsApp!',
-  image: '/og-image.webp',
+  image: '/Thumbnail-Aksara-Chick.png',
   imageAlt: 'Aksara Chick - Ayam Goreng Krispi Terbaik',
 } as const;
 
