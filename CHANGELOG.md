@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/ryansutrisno/aksara-chick-landing/compare/v1.0.0...v1.0.1) (2026-06-05)
+
+### Documentation
+
+* **readme:** add initial project README for Aksara Chick ([46f7d4d](https://github.com/ryansutrisno/aksara-chick-landing/commit/46f7d4d128ac1626694433f62f98c61abc0d6ad0))
+
 ## 1.0.0 (2026-06-05)
 
 ### Chores
