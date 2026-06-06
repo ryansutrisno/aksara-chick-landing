@@ -1,3 +1,9 @@
+## [1.0.5](https://github.com/ryansutrisno/aksara-chick-landing/compare/v1.0.4...v1.0.5) (2026-06-06)
+
+### Build System
+
+* dynamically set site URL using Vercel env vars ([3b930bd](https://github.com/ryansutrisno/aksara-chick-landing/commit/3b930bd3b076da938b9e96ee71ba85390b3783a2))
+
 ## [1.0.4](https://github.com/ryansutrisno/aksara-chick-landing/compare/v1.0.3...v1.0.4) (2026-06-06)
 
 ### Bug Fixes
