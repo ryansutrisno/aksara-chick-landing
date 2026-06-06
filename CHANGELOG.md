@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/ryansutrisno/aksara-chick-landing/compare/v1.0.2...v1.0.3) (2026-06-06)
+
+### Bug Fixes
+
+* **base-layout:** update og:image dimensions ([2a7c081](https://github.com/ryansutrisno/aksara-chick-landing/commit/2a7c081e77b3db33ed2a0440049d49aa0f7f4e42))
+
 ## [1.0.2](https://github.com/ryansutrisno/aksara-chick-landing/compare/v1.0.1...v1.0.2) (2026-06-06)
 
 ### Chores
