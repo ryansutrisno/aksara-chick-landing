@@ -1,3 +1,9 @@
+## [1.0.4](https://github.com/ryansutrisno/aksara-chick-landing/compare/v1.0.3...v1.0.4) (2026-06-06)
+
+### Bug Fixes
+
+* use dynamic site origin instead of hardcoded domain ([d395a55](https://github.com/ryansutrisno/aksara-chick-landing/commit/d395a558ee6cad6d1b80bc6d4baca5f2b668944c))
+
 ## [1.0.3](https://github.com/ryansutrisno/aksara-chick-landing/compare/v1.0.2...v1.0.3) (2026-06-06)
 
 ### Bug Fixes
