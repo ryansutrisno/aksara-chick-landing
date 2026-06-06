@@ -17,7 +17,7 @@ const {
   imageAlt = meta.imageAlt,
 } = Astro.props;
 
-const siteUrl = 'https://aksara-chick.vercel.app';
+const siteUrl = Astro.site ? Astro.site.origin : Astro.url.origin;
 const canonicalURL = new URL(Astro.url.pathname, siteUrl).toString();
 const fullImageUrl = image.startsWith('http') ? image : `${siteUrl}${image}`;
 ---
