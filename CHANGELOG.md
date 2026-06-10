@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/ryansutrisno/aksara-chick-landing/compare/v1.0.5...v1.1.0) (2026-06-10)
+
+### Features
+
+* add branding assets, update logos/favicons, add docs ([e691bec](https://github.com/ryansutrisno/aksara-chick-landing/commit/e691becd49412d368c26b6d069ea843fc29adf9b))
+
 ## [1.0.5](https://github.com/ryansutrisno/aksara-chick-landing/compare/v1.0.4...v1.0.5) (2026-06-06)
 
 ### Build System
